@@ -1,7 +1,7 @@
 
 ## 研究主題: Twitter情感分析預測Netflix股價波動
 
-### 研究背景
+## 研究背景
 
 1. 研究動機
    - 預測股價波動對投資者、金融分析師來說，是一個複雜的挑戰，因為股市在全球經濟扮演至關重要的角色。金融市場的時間序列經常具有高雜訊及非線性等特徵，因此提高預測準確率是非常具有挑戰性的任務。
@@ -21,10 +21,10 @@
    - 提供一個結合情感分析的預測模型，來更加準確預測股票波動
    - 評估不同機器學習模型(LSTM、SVM、Random Forset)，找出高效能的預測模型，提供未來研究建議
 
-### 研究架構
+## 研究架構
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/Project_%20structure.PNG)</center>
 
-### 機器學習建模流程
+## 機器學習建模流程
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/Building_model.PNG)</center>
 
 
