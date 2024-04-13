@@ -21,8 +21,10 @@
    - 評估不同機器學習模型(LSTM、SVM、Random Forset)，找出高效能的預測模型，提供未來研究建議
 
 ### 研究架構
-[Project structure](/images/Project_structure.PNG)
-<br><center> ![image](/images/Project_structure.PNG)</center>
+<br><center> ![image](https://drive.google.com/file/d/1zOu9dcUoX-_WkHNYWYMBNrygavxaWoOR/view?usp=sharing)</center>
+
+<br><center> ![image](https://drive.google.com/uc?export=view&id=1dAWrpyQ9wc8ehxKFVR8NB2q45Zh468g0)</center>
+
 
 ### 機器學習建模流程
 
