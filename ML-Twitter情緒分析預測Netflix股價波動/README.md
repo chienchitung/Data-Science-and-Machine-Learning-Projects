@@ -22,6 +22,7 @@
 
 ### 研究架構
 [Project structure](/images/Project_structure.PNG)
+<br><center> ![image](/images/Project_structure.PNG)</center>
 
 ### 機器學習建模流程
 
