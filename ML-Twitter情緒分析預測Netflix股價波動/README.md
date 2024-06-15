@@ -32,20 +32,14 @@
 ### 資料前處理
 1. 讀取Twitter的貼文後，並進行貼文資料的前處理，將語意無關的符號或字串將予以刪除。
 2. 使用TextBlob和Vader情感套件，分別計算出Polarity及Compound的情感分數。
-3. 
+3. 匯入Yahoo Finance的資料後，將情感資料與股價資料做整併。
+4. 為了將模型有更好的訓練，因此加入其他技術指標及前五日收盤價作為特徵變數到資料集。
+5. 將當日收盤價減去前一日收盤價進行漲跌二分類的標記，做為目標變數。
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/TextBlob_Vader_info.PNG)</center>
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/dataset_with_close_lag.PNG)</center>
 
 ### 探索性分析
-
-### 情感分析
-1. 預期目標
-2. 
-
-
-### 模型建立
-- LSTM
-- SVM
-- Random forest
-- Prophet
+1. 讀取
 
 ## 預測結果
 
