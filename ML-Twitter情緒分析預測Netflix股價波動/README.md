@@ -14,12 +14,13 @@
    - RQ2: 比較不同種機器學習模型，加入TextBlob跟VADER情感分析後，模型預測效能是否有差異
 
 3. 模型實驗設計
-   - 無加入情感分析 vs. 有加入情感分析
-   - TextBlob vs. VADER
-  
+   - 股價預測漲跌
+   - 股價 + TextBlob預測漲跌
+   - 股價 + Vader預測漲跌
+
 4. 預期目標
-   - 提供一個結合情感分析的預測模型，來更加準確預測股票波動
-   - 評估不同機器學習模型(LSTM、SVM、Random Forset、Prophet)，找出高效能的預測模型，提供未來研究建議
+   - 本研究目標是提供一個結合情感分析的預測模型，來更加準確預測股票波動。
+   - 評估不同機器學習模型(LSTM、SVM、Random Forset、Prophet)，比較預測模型之間的準確度，提供未來研究建議。
 
 ## 研究方法
 ### 研究架構
@@ -28,9 +29,17 @@
 ### 機器學習建模流程
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/Building_model.PNG)</center>
 
-### 資料前處理/探索性分析
+### 資料前處理
+1. 讀取Twitter的貼文後，並進行貼文資料的前處理，將語意無關的符號或字串將予以刪除。
+2. 使用TextBlob和Vader情感套件，分別計算出Polarity及Compound的情感分數。
+3. 
+
+### 探索性分析
 
 ### 情感分析
+1. 預期目標
+2. 
+
 
 ### 模型建立
 - LSTM
