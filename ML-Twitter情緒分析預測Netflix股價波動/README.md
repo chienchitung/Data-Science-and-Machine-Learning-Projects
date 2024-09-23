@@ -31,12 +31,14 @@
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/research_flow.png)</center>
 
 ### 資料前處理
-1. 這次的資料來源是從Kaggle下載的Twitter數據，原始資料的日期範圍從2020年1月至2022年7月，共涵蓋635天，包含36萬則貼文，這些資料將用於模型訓練。
-2. 讀取Twitter的貼文後，並進行貼文資料的前處理，將語意無關的符號或字串將予以刪除。
-3. 使用TextBlob和Vader情感套件，分別計算出Polarity及Compound的情感分數。
-4. 匯入Yahoo Finance的資料後，將情感資料與股價資料做整併。
-5. 為了將模型有更好的訓練，因此加入其他技術指標及前五日收盤價作為特徵變數到資料集。
-6. 將當日收盤價減去前一日收盤價進行漲跌二分類的標記，做為目標變數。
+這次的資料來源是從Kaggle下載的Twitter數據，原始資料的日期範圍從2020年1月至2022年7月，共涵蓋635天，包含36萬則貼文，這些資料將用於模型訓練。
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/netflix_dataset.png)</center>
+
+1. 讀取Twitter的貼文後，並進行貼文資料的前處理，將語意無關的符號或字串將予以刪除。
+2. 使用TextBlob和Vader情感套件，分別計算出Polarity及Compound的情感分數。
+3. 匯入Yahoo Finance的資料後，將情感資料與股價資料做整併。
+4. 為了將模型有更好的訓練，因此加入其他技術指標及前五日收盤價作為特徵變數到資料集。
+5. 將當日收盤價減去前一日收盤價進行漲跌二分類的標記，做為目標變數。
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/textblob_vader_info.png)</center>
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/dataset_with_close_lag.png)</center>
 
@@ -48,11 +50,12 @@
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/sentiment_analysis.png)</center>
 
 ## 模型建立
-1. 預測結果將透過混淆矩陣以及四個常用於評估分類模型的指標來展示各組資料和模型的表現。混淆矩陣中，行表示實際的漲跌情況，列表示預測的漲跌情況。綠色區域代表預測與實際一致的部分，顏色越深或比例越大表示預測越準確。四個評估指標包括準確率、精確率、召回率和F1分數。
+預測結果將透過混淆矩陣以及四個常用於評估分類模型的指標來展示各組資料和模型的表現。混淆矩陣中，行表示實際的漲跌情況，列表示預測的漲跌情況。綠色區域代表預測與實際一致的部分，顏色越深或比例越大表示預測越準確。四個評估指標包括準確率、精確率、召回率和F1分數。
 
-
-
-3. 
+1. LSTM
+2. SVM
+3. Random forest
+4.  
 
 ## 評估模型
 
