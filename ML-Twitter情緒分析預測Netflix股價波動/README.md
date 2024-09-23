@@ -68,16 +68,22 @@
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/SVM_3.png)</center>  
 
 ### Random forest
-- 最左邊顯示的是僅使用價格資料的預測結果，準確率約為60%。主要問題出現在混淆矩陣的右上角，實際為跌的樣本容易被誤預測為漲。
-- 加入TextBlob後，實際為跌的樣本被誤預測為漲的情況有所改善，但同時右下角實際為漲且被正
+- Random Forest Classifier在加入情感分析資料後，能夠略微提升對股市漲跌的預測準確率，但增益不如其他模型顯著。
+- Random Forest Regressor在處理股價資料時表現良好，但情感分析資料對其預測能力的增益有限。
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/rf_classifier.png)</center>
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/rf_regression.png)</center>  
 
 ### Prophet
-- 最左邊顯示的是僅使用價格資料的預測結果，準確率約為60%。主要問題出現在混淆矩陣的右上角，實際為跌的樣本容易被誤預測為漲。
-- 加入TextBlob後，實際為跌的樣本被誤預測為漲的情況有所改善，但同時右下角實際為漲且被正
+- Prophet模型在處理股價資料時，能夠有效地捕捉長期趨勢和季節性變化。
+- 加入情感分析資料（TextBlob或VADER）後，對於Prophet的增益有限，特別是在情感特徵未能顯著影響長期趨勢的情況下。
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/prophet_1.png)</center>
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/prophet_2.png)</center>
 
 ## 評估模型
+- Prophet模型在處理股價資料時的預測準確率相對穩定，尤其在長期趨勢和季節性變化的捕捉上表現良好。當加入情感分析資料（TextBlob或VADER）後，Prophet的準確率變化不大，這可能是因為該模型主要依賴於時間序列資料。
+- Random Forest Classifier在處理結構化數據（如單純的股價資料）時，通常能夠提供較高的準確率。當加入情感分析資料時，準確率可能會略有提升，但增益有限。
+- 在預測股價變動幅度上，Random Forest Regressor通常能夠提供良好的準確率，特別是在處理非線性和高維度數據時。加入情感分析資料後，準確率的提升取決於情感特徵是否能夠提供額外的有效資訊。
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/final_evaluation.png)</center>
 
 ## 結論建議
 ### 模型選擇
