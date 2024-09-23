@@ -62,7 +62,7 @@
 ### SVM
 - 在結合TextBlob情感分析資料時，線性核函數的預測準確率顯著提升，顯示SVM對於情感資料的敏感性。這表明TextBlob所提供的情感特徵能夠有效地幫助線性SVM模型改善預測能力。
 - 其他核函數（如Sigmoid、Polynomial、RBF）在加入情感分析資料後，預測準確率改善有限，這可能是因為這些核函數在處理高維度非線性特徵時，對情感資料的增益不如線性核明顯。
-- 若觀察Recall及F1 score的表現，不論是否加入情感分析資料，高斯核函數都是優於其他含函數。
+- 若觀察Recall及F1 score的表現，不論是否加入情感分析資料，高斯核函數都是優於其他核函數。
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/SVM_1.png)</center>
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/SVM_2.png)</center>
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/SVM_3.png)</center>  
