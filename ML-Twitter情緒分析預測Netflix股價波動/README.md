@@ -60,12 +60,18 @@
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/LSTM.png)</center>  
    
 ### SVM
-- 最左邊顯示的是僅使用價格資料的預測結果，準確率約為60%。主要問題出現在混淆矩陣的右上角，實際為跌的樣本容易被誤預測為漲。
-- 加入TextBlob後，實際為跌的樣本被誤預測為漲的情況有所改善，但同時右下角實際為漲且被正
+- 在結合TextBlob情感分析資料時，線性核函數的預測準確率顯著提升，顯示SVM對於情感資料的敏感性。這表明TextBlob所提供的情感特徵能夠有效地幫助線性SVM模型改善預測能力。
+- 其他核函數（如Sigmoid、Polynomial、RBF）在加入情感分析資料後，預測準確率改善有限，這可能是因為這些核函數在處理高維度非線性特徵時，對情感資料的增益不如線性核明顯。
+- 若觀察Recall及F1 score的表現，不論是否加入情感分析資料，高斯核函數都是優於其他含函數。
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/SVM_1.png)</center>
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/SVM_2.png)</center>
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/SVM_3.png)</center>  
 
 ### Random forest
 - 最左邊顯示的是僅使用價格資料的預測結果，準確率約為60%。主要問題出現在混淆矩陣的右上角，實際為跌的樣本容易被誤預測為漲。
 - 加入TextBlob後，實際為跌的樣本被誤預測為漲的情況有所改善，但同時右下角實際為漲且被正
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/rf_classifier.png)</center>
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/rf_regression.png)</center>  
 
 ### Prophet
 - 最左邊顯示的是僅使用價格資料的預測結果，準確率約為60%。主要問題出現在混淆矩陣的右上角，實際為跌的樣本容易被誤預測為漲。
