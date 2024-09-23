@@ -28,6 +28,7 @@
 
 ### 機器學習建模流程
 <br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/building_model.png)</center>
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/research_structure.png)</center>
 
 ### 資料前處理
 1. 讀取Twitter的貼文後，並進行貼文資料的前處理，將語意無關的符號或字串將予以刪除。
