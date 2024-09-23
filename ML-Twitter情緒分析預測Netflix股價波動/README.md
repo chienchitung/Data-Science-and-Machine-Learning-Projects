@@ -24,10 +24,11 @@
 
 ## 研究方法
 ### 研究架構
-<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/Project_%20structure.PNG)</center>
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/project_%20structure.PNG)</center>
 
 ### 機器學習建模流程
-<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/Building_model.PNG)</center>
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/building_model.PNG)</center>
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/research_structure.PNG)</center>
 
 ### 資料前處理
 1. 讀取Twitter的貼文後，並進行貼文資料的前處理，將語意無關的符號或字串將予以刪除。
