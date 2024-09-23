@@ -24,11 +24,11 @@
 
 ## 研究方法
 ### 研究架構
-<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/project_%20structure.PNG)</center>
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/project_%20structure.png)</center>
 
 ### 機器學習建模流程
-<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/building_model.PNG)</center>
-<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/research_structure.PNG)</center>
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/building_model.png)</center>
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/research_structure.png)</center>
 
 ### 資料前處理
 1. 讀取Twitter的貼文後，並進行貼文資料的前處理，將語意無關的符號或字串將予以刪除。
@@ -36,8 +36,8 @@
 3. 匯入Yahoo Finance的資料後，將情感資料與股價資料做整併。
 4. 為了將模型有更好的訓練，因此加入其他技術指標及前五日收盤價作為特徵變數到資料集。
 5. 將當日收盤價減去前一日收盤價進行漲跌二分類的標記，做為目標變數。
-<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/textblob_vader_info.PNG)</center>
-<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/dataset_with_close_lag.PNG)</center>
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/textblob_vader_info.png)</center>
+<br><center> ![image](/ML-Twitter情緒分析預測Netflix股價波動/images/dataset_with_close_lag.png)</center>
 
 ### 探索性分析
 1. 讀取
